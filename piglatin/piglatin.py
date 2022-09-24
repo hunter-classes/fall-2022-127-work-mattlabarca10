@@ -1,3 +1,4 @@
+"""
 def bondify(name):
   result = ""
   location = name.find(' ')
@@ -8,18 +9,34 @@ def bondify(name):
 
 print(bondify("Matthew LaBarca"))
 print(bondify("james bond"))
+"""
 
 def piglatin(word):
   result = ""
-
-  if word[0] in ["a"or"e"or"i"or"o"or"u"or"A"or"E"or"I"or"O"or"U"]:
-    result = (word+"yay").lower()
-  else:
-    result = (word[1:]+word[0]+"ay").lower()
+  first = word[0]
+  first = str(first)
+  last = word[len(word)-1]
+  last = str(last)
+  punc = False
+  if last in ['.']:
+        punc = True
+  a = len(word)-1
+  if (punc == True):     
+    if first in ['aeiouAEIOU']:
+      result = (word[0:a]+"yay"+last).lower()
+    else:
+      result = (word[1:a]+word[0]+"ay"+last).lower()
+  else: 
+    if first in ['aeiouAEIOU']:
+      result = (word[0:]+"yay").lower()
+    else:
+      result = (word[1:]+word[0]+"ay").lower()
+  
   return result
 
+print(piglatin("Family."))
 print(piglatin("Than"))
-print(piglatin("apple"))
+print(piglatin("apple,"))
 print(piglatin("Octopus"))
 print(piglatin("maTthew"))
-print(piglatin("pLuTo"))
+print(piglatin("You're"))
