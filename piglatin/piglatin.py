@@ -18,11 +18,11 @@ def piglatin(word):
   last = word[len(word)-1]
   last = str(last)
   punc = False
-  if last in ['.']:
-        punc = True
+  if last in '.!?,':
+     punc = True
   a = len(word)-1
   if (punc == True):     
-    if first in ['aeiouAEIOU']:
+    if first in 'aeiouAEIOU':
       result = (word[0:a]+"yay"+last).lower()
     else:
       result = (word[1:a]+word[0]+"ay"+last).lower()
@@ -35,8 +35,8 @@ def piglatin(word):
   return result
 
 print(piglatin("Family."))
-print(piglatin("Than"))
+print(piglatin("Than!"))
 print(piglatin("apple,"))
 print(piglatin("Octopus"))
-print(piglatin("maTthew"))
+print(piglatin("maTthew?"))
 print(piglatin("You're"))
