@@ -27,7 +27,7 @@ def piglatin(word):
     else:
       result = (word[1:a]+word[0]+"ay"+last).lower()
   else: 
-    if first in ['aeiouAEIOU']:
+    if first in 'aeiouAEIOU':
       result = (word[0:]+"yay").lower()
     else:
       result = (word[1:]+word[0]+"ay").lower()
