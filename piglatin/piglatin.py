@@ -18,6 +18,10 @@ def piglatin(word):
   last = word[len(word)-1]
   last = str(last)
   punc = False
+  if word[0] == word[0].upper():
+    capital = True
+  else:
+    capital = False
   if last in '.!?,':
      punc = True
   a = len(word)-1
@@ -31,12 +35,13 @@ def piglatin(word):
       result = (word[0:]+"yay").lower()
     else:
       result = (word[1:]+word[0]+"ay").lower()
-  
+  if capital:
+    result = result.capitalize()
   return result
 
 print(piglatin("Family."))
 print(piglatin("Than!"))
 print(piglatin("apple,"))
 print(piglatin("Octopus"))
-print(piglatin("maTthew?"))
+print(piglatin("Matthew?"))
 print(piglatin("You're"))
