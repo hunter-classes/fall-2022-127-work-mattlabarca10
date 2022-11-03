@@ -51,6 +51,13 @@ def squared(numList):
 
 print(squared([6,2,4,1,6,4,9]))
 
+#could put for loop in bracket
+def squared2(numList):
+    newList = [num**2 for num in numList]
+    return newList
+
+print(squared2([6,2,4,1,6,4,9]))
+
 # Write a function that takes two lists of numbers and returns a new list where each item is the corresponding values of the original
 # lists added together. Ex [1,2,3] and [10,20,30] would return the list [11,22,33]
 def combinedSum(list1,list2):

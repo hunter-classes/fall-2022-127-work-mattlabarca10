@@ -11,7 +11,7 @@ print(bondify("Matthew LaBarca"))
 print(bondify("james bond"))
 """
 
-def piglatin(word):
+def piglatinify(word):
   result = ""
   first = word[0]
   first = str(first)
@@ -39,9 +39,9 @@ def piglatin(word):
     result = result.capitalize()
   return result
 
-print(piglatin("Family."))
-print(piglatin("Than!"))
-print(piglatin("apple,"))
-print(piglatin("Octopus"))
-print(piglatin("Matthew?"))
-print(piglatin("You're"))
+print(piglatinify("Family."))
+print(piglatinify("Than!"))
+print(piglatinify("apple,"))
+print(piglatinify("Octopus"))
+print(piglatinify("Matthew?"))
+print(piglatinify("You're"))
