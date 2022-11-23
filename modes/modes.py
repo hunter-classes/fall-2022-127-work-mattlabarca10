@@ -38,10 +38,11 @@ import random
 
 def fastMode(dataset):
     list = [0]*100
-    for num in dataset():
+    for num in dataset:
         list[num]+=1
-    return findLargest(list)
- 
+    return list.index(findLargest(list))
+
+print(fastMode([6,2,7,2,6,78,8,2,1,5,6,3,2,7]))
 
 def buildRandomList(size,maxvalue):
     #result = []
@@ -51,6 +52,10 @@ def buildRandomList(size,maxvalue):
     result = [random.randrange(maxvalue) for x in range(size)]
     return result 
 
+
+
+
+"""
 def testMode(size,maxValue):
     print("Dataset Size: ",size)
     dataset = buildRandomList(size,maxValue)
@@ -67,3 +72,4 @@ def testFindLargest(size,maxValue):
 
 #testFindLargest(80000,30)
 testMode(40000,30)
+"""
