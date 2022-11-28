@@ -1,5 +1,5 @@
 # Extras completed: pirate.dat, handles upper/lower cases, and advanced translations 
-# Sometimes
+
 pirate = open('pirate.dat').read()       # opens and reads all files    
 inp = open('input.txt').read()
 input = inp.lower().split()              # each word in input is a list
