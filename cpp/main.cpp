@@ -27,24 +27,3 @@ int main()
     cout<<"Out of these numbers, the largest number is "<<largest(array,3)<<" since b was doubled."<<endl;
     return 0;
 }
-
-
-/*
-int main()
-{
-    std::cout << "Hello World!" << std::endl;
-    int max(int a, int b);
-    {
-       if(a > b){
-            return a;
-        }
-        else{
-            return b;
-        }
-        }
-        return a > b;
-    }
-    std::cout << max(4,6) << std::endl;
-    return 0;
-}
-*/
