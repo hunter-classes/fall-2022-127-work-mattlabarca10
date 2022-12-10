@@ -3,8 +3,8 @@ using namespace std;
 
 int largest(int arr[], int n){   // use of function; takes in array and size of array, returns the largest element
     int max = arr[0];
-    for (int i = 1; i < n; i++)  //use of for loop
-        if (arr[i] > max)        //use of if statement
+    for (int i = 1; i < n; i++)  // use of for loop
+        if (arr[i] > max)        // use of if statement
             max = arr[i];
     return max;
 }
@@ -15,7 +15,7 @@ int doub(int a){                 // takes in an integer and returns it doubled
 
 int main()
 {
-    cout<<"Hello World!"<<endl;  //base project
+    cout<<"Hello World!"<<endl;  // base project
     
     int a = 1;
     int b = 5;
